@@ -1,0 +1,31 @@
+testbed:
+  name: testbed.yaml
+  credentials:
+    containerlab:
+      username: clab
+      password: clab@123
+
+devices:
+  lille-core-ncs5k8-1:
+    region: containerlab
+    os: iosxr
+    custom:
+      type: IOSXRV
+      role: core_ncs5k
+    connections:
+      gnmi:
+        host: 172.20.20.3
+        port: 57400
+        login_creds: containerlab
+  lille-core-mx10k8-1:
+    region: containerlab
+    os: junos
+    custom:
+      type: vmx
+      role: core_mx10k8-1
+    connections:
+      gnmi:
+        host: 172.20.20.4
+        port: 57400
+        login_creds: containerlab
+      

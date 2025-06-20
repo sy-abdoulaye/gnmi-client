@@ -1,0 +1,13 @@
+172.20.20.3:
+  update:
+    prefix: interfaces/interface[name=MgmtEth0/RP0/CPU0/0]
+    timestamp: 1750444239476000000
+    update:
+    - path: subinterfaces/subinterface[index=0]/openconfig-if-ip:ipv6/addresses/address[ip=2001:db8::2]/state/ip
+      val: 2001:db8::2
+    - path: subinterfaces/subinterface[index=0]/openconfig-if-ip:ipv6/addresses/address[ip=2001:db8::2]/state/prefix-length
+      val: 64
+    - path: subinterfaces/subinterface[index=0]/openconfig-if-ip:ipv6/addresses/address[ip=2001:db8::2]/state/origin
+      val: STATIC
+    - path: subinterfaces/subinterface[index=0]/openconfig-if-ip:ipv6/addresses/address[ip=2001:db8::2]/state/status
+      val: PREFERRED
