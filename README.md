@@ -84,13 +84,18 @@ devices:
         host: 172.20.20.4
         port: 57400
         login_creds: containerlab
+        subscriptions:
+        - junos_vmx
         
-
 subscriptions:
   cisco_iosxr:
     path: openconfig-interfaces:interfaces/interface[name=MgmtEth0/RP0/CPU0/0]
     mode: sample
     sample_interval: 100000000
+  junos_vmx:
+    path: openconfig-interfaces:interfaces/interface/state
+    mode: sample
+    sample_interval: 10000000000
 ```
 
 ## Usage
