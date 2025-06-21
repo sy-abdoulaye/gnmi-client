@@ -1,0 +1,13 @@
+172.20.20.4:
+  update:
+    prefix: interfaces/interface[name=ge-0/0/60]/state/counters/out-queue[queue-number=1]
+    timestamp: 1750520281826000000
+    update:
+    - path: queued-pkts
+      val: 0
+    - path: queued-bytes
+      val: 0
+    - path: lp-red-drop-pkts
+      val: 0
+    - path: hp-red-drop-pkts
+      val: 0
