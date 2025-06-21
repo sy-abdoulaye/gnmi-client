@@ -1,0 +1,1352 @@
+172.20.20.4:
+  gnmi_version: 0.7.0
+  supported_encodings:
+  - json
+  - proto
+  - ascii
+  - json_ietf
+  supported_models:
+  - name: ietf-yang-metadata
+    organization: IETF NETMOD (NETCONF Data Modeling Language) Working Group
+    version: '2016-08-05'
+  - name: junos-configuration-metadata
+    organization: Juniper Networks, Inc.
+    version: '2021-09-01'
+  - name: junos-conf-access-profile
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-access
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-accounting-options
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-applications
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-bridge-domains
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-chassis
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-class-of-service
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-diameter
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-dynamic-profiles
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-event-options
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-fabric
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-firewall
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-forwarding-options
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-interfaces
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-logical-systems
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-multi-chassis
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-multicast-snooping-options
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-poe
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-policy-options
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-protocols
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-root
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-routing-instances
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-routing-options
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-security
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-services
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-snmp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-switch-options
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-system
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-unified-edge
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-virtual-chassis
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-vlans
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-conf-vmhost
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-access-cac
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-access-security
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-accounting
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-agent
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-amt
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-analytics
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ancp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-app-engine
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-aps
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-arp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-as-path
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-authentication-whitelist
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-auto-bandwidth
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-auto-configuration
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-backup-selection
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-bfd
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-bgp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-bridge
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-captive-portal
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-chassis
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-class-of-service
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-clear
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-cli
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-connections
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-database-replication
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ddos-protection
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-dhcp-security
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-dhcp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-dhcpv6
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-diameter
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-dot1x
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-dvmrp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-dynamic-profile
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-dynamic-tunnels
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ephemeral-configuration
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-esis
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ethernet-switching
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-event-options
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-event-viewer
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-evpn
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-extensible-subscriber-services
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-extension-provider
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-extension-service
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-file-mgd
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-file
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-firewall
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-forwarding-options
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-help
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-helper
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-hfrr
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-host
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-iccp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-igmp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ilmi
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ingress-replication
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-op
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-interfaces
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ipv6
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-isis
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-jdaf
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-l2-learning
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-l2circuit
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-l2cpd
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-l2vpn
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-lacp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ldp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-link-management
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-lldp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-load
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-log
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-loop-detect
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-mac-refresh
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-mac-rewrite
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-mld
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-monitor
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-mpls
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-msdp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-mvpn
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-multi-chassis
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-multicast
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-mvrp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-network-access
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-nonstop-routing
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ntp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-oam
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ospf3
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ospf
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ovsdb
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-passive-monitoring
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-path-computation-client
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-performance-monitoring
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-pfe
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-pgm
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-pim
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ping
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-poe
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-policer
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ppp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-pppoe
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-programmable-rpd
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-protection-group
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ptp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-quit
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-r2cp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-redundant-trunk-group
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-request
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-restart
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-rip
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ripng
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-rollback-config
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-route
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-rsvp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-sap
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-save
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-security
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-services
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-set
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-sflow
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-shmlog
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-snmp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-spanning-tree
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-spring-traffic-engineering
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ssl-certificates
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-static-subscribers
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-subscribers
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-synchronous-ethernet
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-syslog-filenames
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-system
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-task
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-ted
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-test
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-traceroute
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-unified-edge
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-v4ov6-tunnels
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-validation
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-version
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-virtual-chassis
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-vlans
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-vmhost
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-vpls
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-rpc-vrrp
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-common-types
+    organization: Juniper Networks, Inc.
+    version: '2023-01-01'
+  - name: junos-arp
+    organization: Juniper Networks
+    version: '2020-07-17'
+  - name: junos-ddos
+    organization: Juniper Networks
+    version: '2020-10-07'
+  - name: junos-nd6
+    organization: Juniper Networks
+    version: '2020-07-17'
+  - name: junos-resiliency-interface
+    organization: Juniper Networks Inc.
+    version: '2019-10-31'
+  - name: junos-yang-types
+    organization: Juniper Networks
+    version: '2021-03-08'
+  - name: iana-if-type
+    organization: IANA
+    version: '2014-05-08'
+  - name: ietf-inet-types
+    organization: IETF NETMOD (NETCONF Data Modeling Language) Working Group
+    version: '2013-07-15'
+  - name: ietf-interfaces
+    organization: IETF NETMOD (NETCONF Data Modeling Language) Working Group
+    version: '2014-05-08'
+  - name: ietf-yang-types
+    organization: IETF NETMOD (NETCONF Data Modeling Language) Working Group
+    version: '2013-07-15'
+  - name: ietf-routing-types
+    organization: IETF RTGWG - Routing Area Working Group
+    version: '2017-12-04'
+  - name: junos-extension
+    organization: Juniper Networks, Inc.
+    version: '2020-01-01'
+  - name: junos-base-extensions
+    organization: Juniper Networks, Inc.
+    version: '2022-02-03'
+  - name: junos-error-types
+    organization: Juniper Networks, Inc.
+    version: '2022-02-03'
+  - name: junos-evpn
+    organization: Juniper Networks
+    version: '2022-12-17'
+  - name: junos-fabric
+    organization: Juniper Networks, Inc.
+    version: '2023-10-20'
+  - name: junos-fpc-env
+    organization: Juniper Networks, Inc.
+    version: '2022-07-19'
+  - name: junos-state
+    organization: Juniper Networks, Inc.
+    version: '2021-12-03'
+  - name: junos-state-interfaces
+    organization: Juniper Networks, Inc.
+    version: '2023-12-21'
+  - name: junos-state-interfaces-ip
+    organization: Juniper Networks, Inc
+    version: '2023-07-17'
+  - name: junos-state-interfaces-tunnel
+    organization: Juniper Networks, Inc.
+    version: '2023-07-17'
+  - name: junos-state-chassis
+    organization: Juniper Networks, Inc.
+    version: '2022-04-23'
+  - name: junos-state-protocols
+    organization: Juniper Networks, Inc.
+    version: '2023-08-08'
+  - name: junos-state-poe
+    organization: Juniper Networks, Inc
+    version: '2022-05-23'
+  - name: junos-state-services
+    organization: Juniper Networks, Inc.
+    version: '2021-12-03'
+  - name: junos-state-system
+    organization: Juniper Networks, Inc.
+    version: '2023-07-14'
+  - name: junos-state-mist-types
+    organization: Juniper Networks, Inc.
+    version: '2022-03-14'
+  - name: junos-state-mist
+    organization: Juniper Networks, Inc.
+    version: '2022-03-14'
+  - name: junos-state-lldp
+    organization: Juniper Networks, Inc.
+    version: '2022-02-21'
+  - name: junos-state-interfaces-ethernet
+    organization: Juniper Networks, Inc
+    version: '2022-12-21'
+  - name: junos-state-system-controller
+    organization: Juniper Networks, Inc.
+    version: '2022-03-10'
+  - name: junos-state-dot1x
+    organization: Juniper Networks, Inc.
+    version: '2023-06-21'
+  - name: junos-state-dhcp-security
+    organization: Juniper Networks Inc.
+    version: '2023-06-28'
+  - name: junos-state-dhcp-common
+    organization: Juniper Networks, Inc.
+    version: '2023-06-28'
+  - name: junos-types
+    organization: Juniper Networks, Inc.
+    version: '2023-08-17'
+  - name: junos-state-access-security
+    organization: Juniper Networks, Inc.
+    version: '2023-04-21'
+  - name: junos-state-forwarding-options
+    organization: Juniper Networks, Inc.
+    version: '2023-03-31'
+  - name: junos-state-routing-instances
+    organization: Juniper Networks, Inc.
+    version: '2023-04-21'
+  - name: openconfig-aft-common
+    organization: OpenConfig working group
+    version: 2.2.0
+  - name: openconfig-aft-ethernet
+    organization: OpenConfig working group
+    version: 2.2.0
+  - name: openconfig-aft-ipv4
+    organization: OpenConfig working group
+    version: 2.2.0
+  - name: openconfig-aft-ipv6
+    organization: OpenConfig working group
+    version: 2.2.0
+  - name: openconfig-aft-mpls
+    organization: OpenConfig working group
+    version: 2.2.0
+  - name: openconfig-aft-pf
+    organization: OpenConfig working group
+    version: 2.2.0
+  - name: openconfig-aft-types
+    organization: OpenConfig Working Group
+    version: 1.1.0
+  - name: openconfig-aft
+    organization: OpenConfig working group
+    version: 2.2.0
+  - name: openconfig-ospfv2
+    organization: OpenConfig working group
+    version: 0.4.0
+  - name: openconfig-acl
+    organization: OpenConfig working group
+    version: 1.2.2
+  - name: openconfig-ospf-types
+    organization: OpenConfig working group
+    version: 0.1.3
+  - name: openconfig-ospfv2-global
+    organization: OpenConfig working group
+    version: 0.4.0
+  - name: openconfig-ospfv2-area
+    organization: OpenConfig working group
+    version: 0.4.0
+  - name: openconfig-ospfv2-area-interface
+    organization: OpenConfig working group
+    version: 0.4.0
+  - name: openconfig-ospfv2-lsdb
+    organization: OpenConfig working group
+    version: 0.4.0
+  - name: openconfig-ospfv2-common
+    organization: OpenConfig working group
+    version: 0.4.0
+  - name: openconfig-ospf-policy
+    organization: OpenConfig working group
+    version: 0.1.3
+  - name: openconfig-policy-forwarding
+    organization: OpenConfig working group
+    version: 0.5.0
+  - name: openconfig-pf-interfaces
+    organization: OpenConfig working group
+    version: 0.5.0
+  - name: openconfig-pf-path-groups
+    organization: OpenConfig working group
+    version: 0.2.1
+  - name: openconfig-pf-forwarding-policies
+    organization: OpenConfig working group
+    version: 0.5.0
+  - name: openconfig-packet-match-types
+    organization: OpenConfig working group
+    version: 1.3.2
+  - name: openconfig-platform-cpu
+    organization: OpenConfig working group
+    version: 0.1.1
+  - name: openconfig-bgp-common-multiprotocol
+    organization: OpenConfig working group
+    version: 9.1.0
+  - name: openconfig-packet-match
+    organization: OpenConfig working group
+    version: 1.3.1
+  - name: openconfig-bgp-common-structure
+    organization: OpenConfig working group
+    version: 9.1.0
+  - name: openconfig-bgp-common
+    organization: OpenConfig working group
+    version: 9.1.0
+  - name: openconfig-bgp-errors
+    organization: OpenConfig working group
+    version: 5.3.1
+  - name: openconfig-bgp-global
+    organization: OpenConfig working group
+    version: 9.1.0
+  - name: openconfig-bgp-neighbor
+    organization: OpenConfig working group
+    version: 9.1.0
+  - name: openconfig-bgp-peer-group
+    organization: OpenConfig working group
+    version: 9.1.0
+  - name: openconfig-bgp-policy
+    organization: OpenConfig working group
+    version: 6.0.2
+  - name: openconfig-bgp-types
+    organization: OpenConfig working group
+    version: 5.3.1
+  - name: openconfig-bgp
+    organization: OpenConfig working group
+    version: 9.1.0
+  - name: openconfig-extensions
+    organization: OpenConfig working group
+    version: '2020-06-16'
+  - name: openconfig-if-sdn-ext
+    organization: OpenConfig working group
+    version: 0.1.0
+  - name: openconfig-p4rt
+    organization: OpenConfig Working Group
+    version: 0.4.0
+  - name: openconfig-if-aggregate
+    organization: OpenConfig working group
+    version: 1.0.1
+  - name: openconfig-if-ethernet-ext
+    organization: OpenConfig working group
+    version: 0.1.1
+  - name: openconfig-if-ethernet
+    organization: OpenConfig working group
+    version: 2.12.2
+  - name: openconfig-if-ip-ext
+    organization: OpenConfig working group
+    version: 1.0.1
+  - name: openconfig-if-ip
+    organization: OpenConfig working group
+    version: 3.5.0
+  - name: openconfig-if-types
+    organization: OpenConfig working group
+    version: 0.2.1
+  - name: openconfig-if-tunnel
+    organization: OpenConfig working group
+    version: 0.1.1
+  - name: openconfig-inet-types
+    organization: OpenConfig working group
+    version: 0.6.0
+  - name: openconfig-interfaces
+    organization: OpenConfig working group
+    version: 3.0.2
+  - name: openconfig-if-8021x
+    organization: OpenConfig working group
+    version: 0.0.1
+  - name: openconfig-isis-lsdb-types
+    organization: OpenConfig working group
+    version: 0.4.2
+  - name: openconfig-isis-lsp
+    organization: OpenConfig working group
+    version: 1.0.0
+  - name: openconfig-isis-policy
+    organization: OpenConfig working group
+    version: 0.5.0
+  - name: openconfig-isis-routing
+    organization: OpenConfig working group
+    version: 1.0.0
+  - name: openconfig-isis-types
+    organization: OpenConfig working group
+    version: 0.6.0
+  - name: openconfig-isis
+    organization: OpenConfig working group
+    version: 1.0.0
+  - name: openconfig-igmp-types
+    organization: OpenConfig working group
+    version: 0.1.1
+  - name: openconfig-igmp
+    organization: OpenConfig working group
+    version: 0.3.0
+  - name: openconfig-pim-types
+    organization: OpenConfig working group
+    version: 0.1.1
+  - name: openconfig-pim
+    organization: OpenConfig working group
+    version: 0.4.1
+  - name: openconfig-lacp
+    organization: OpenConfig working group
+    version: 1.2.0
+  - name: openconfig-lldp-types
+    organization: OpenConfig working group
+    version: 0.1.0
+  - name: openconfig-lldp
+    organization: OpenConfig working group
+    version: 0.2.1
+  - name: openconfig-local-routing
+    organization: OpenConfig working group
+    version: 2.0.0
+  - name: openconfig-macsec
+    organization: OpenConfig working group
+    version: 0.2.0
+  - name: openconfig-macsec-types
+    organization: OpenConfig working group
+    version: 0.1.0
+  - name: openconfig-metadata
+    organization: OpenConfig working group
+    version: 0.1.0
+  - name: openconfig-mpls-igp
+    organization: OpenConfig working group
+    version: 2.2.0
+  - name: openconfig-mpls-ldp
+    organization: OpenConfig working group
+    version: 3.2.0
+  - name: openconfig-mpls-rsvp
+    organization: OpenConfig working group
+    version: 4.0.0
+  - name: openconfig-mpls-sr
+    organization: OpenConfig working group
+    version: 3.0.1
+  - name: openconfig-mpls-static
+    organization: OpenConfig working group
+    version: 3.2.2
+  - name: openconfig-mpls-te
+    organization: OpenConfig working group
+    version: 3.2.2
+  - name: openconfig-mpls-types
+    organization: OpenConfig working group
+    version: 3.4.0
+  - name: openconfig-mpls
+    organization: OpenConfig working group
+    version: 3.2.2
+  - name: openconfig-network-instance-l2
+    organization: OpenConfig working group
+    version: 1.4.0
+  - name: openconfig-network-instance-l3
+    organization: OpenConfig working group
+    version: 0.11.1
+  - name: openconfig-network-instance-types
+    organization: OpenConfig working group
+    version: 0.9.3
+  - name: openconfig-network-instance
+    organization: OpenConfig working group
+    version: 1.4.0
+  - name: openconfig-pcep
+    organization: OpenConfig working group
+    version: 0.1.0
+  - name: openconfig-platform-transceiver
+    organization: OpenConfig working group
+    version: 0.8.0
+  - name: openconfig-platform-linecard
+    organization: OpenConfig working group
+    version: 0.2.0
+  - name: openconfig-platform-controller-card
+    organization: OpenConfig working group
+    version: 0.1.0
+  - name: openconfig-platform-fabric
+    organization: OpenConfig working group
+    version: 0.1.0
+  - name: openconfig-platform-fan
+    organization: OpenConfig working group
+    version: 0.1.1
+  - name: openconfig-platform-psu
+    organization: OpenConfig working group
+    version: 0.2.1
+  - name: openconfig-platform-pipeline-counters
+    organization: OpenConfig working group
+    version: 0.4.0
+  - name: openconfig-platform-types
+    organization: OpenConfig working group
+    version: 1.4.0
+  - name: openconfig-platform-common
+    organization: OpenConfig working group
+    version: 0.22.0
+  - name: openconfig-platform
+    organization: OpenConfig working group
+    version: 0.21.0
+  - name: openconfig-platform-integrated-circuit
+    organization: OpenConfig working group
+    version: 0.3.0
+  - name: openconfig-policy-types
+    organization: OpenConfig working group
+    version: 3.1.1
+  - name: openconfig-qos-elements
+    organization: OpenConfig working group
+    version: 0.9.1
+  - name: openconfig-qos-interfaces
+    organization: OpenConfig working group
+    version: 0.9.1
+  - name: openconfig-qos-types
+    organization: OpenConfig working group
+    version: 0.2.1
+  - name: openconfig-qos
+    organization: OpenConfig working group
+    version: 0.9.1
+  - name: openconfig-rib-bgp-types
+    organization: OpenConfig working group
+    version: 0.5.0
+  - name: openconfig-rib-bgp
+    organization: OpenConfig working group
+    version: 0.8.0
+  - name: openconfig-routing-policy
+    organization: OpenConfig working group
+    version: 3.3.0
+  - name: openconfig-segment-routing
+    organization: OpenConfig working group
+    version: 0.3.0
+  - name: openconfig-segment-routing-types
+    organization: OpenConfig working group
+    version: 0.2.0
+  - name: openconfig-spanning-tree
+    organization: OpenConfig working group
+    version: 0.3.1
+  - name: openconfig-spanning-tree-types
+    organization: OpenConfig working group
+    version: 0.4.1
+  - name: openconfig-srte-policy
+    organization: OpenConfig working group
+    version: 0.2.2
+  - name: openconfig-telemetry
+    organization: OpenConfig working group
+    version: 0.5.1
+  - name: openconfig-telemetry-types
+    organization: OpenConfig working group
+    version: 0.4.2
+  - name: openconfig-transport-types
+    organization: OpenConfig working group
+    version: 0.15.0
+  - name: openconfig-types
+    organization: OpenConfig working group
+    version: 0.6.0
+  - name: openconfig-vlan-types
+    organization: OpenConfig working group
+    version: 3.2.0
+  - name: openconfig-vlan
+    organization: OpenConfig working group
+    version: 3.2.1
+  - name: openconfig-yang-types
+    organization: OpenConfig working group
+    version: 0.3.1
+  - name: jnx-aug-openconfig-if-ip
+    organization: Juniper Networks
+    version: '2016-06-20'
+  - name: jnx-aug-openconfig-interfaces
+    organization: Juniper Networks
+    version: '2016-06-02'
+  - name: jnx-aug-openconfig-isis
+    organization: Juniper Networks
+    version: '2017-06-25'
+  - name: jnx-aug-openconfig-lacp
+    organization: Juniper Networks
+    version: '2020-05-10'
+  - name: jnx-aug-openconfig-lldp
+    organization: Juniper Networks
+    version: '2016-06-24'
+  - name: jnx-aug-openconfig-macsec
+    organization: Juniper Networks
+    version: '2021-09-09'
+  - name: jnx-aug-openconfig-mpls
+    organization: Juniper Networks
+    version: '2018-08-08'
+  - name: openconfig-aaa
+    organization: OpenConfig working group
+    version: 0.5.0
+  - name: jnx-aug-openconfig-ni
+    organization: Juniper Networks
+    version: '2021-07-09'
+  - name: jnx-aug-openconfig-bfd
+    organization: Juniper Networks
+    version: '2021-07-21'
+  - name: jnx-aug-openconfig-routing-policy
+    organization: Juniper Networks
+    version: '2021-07-10'
+  - name: jnx-aug-openconfig-system-aaa
+    organization: Juniper Networks
+    version: '2021-12-01'
+  - name: jnx-aug-openconfig-qos
+    organization: Juniper Networks
+    version: '2020-09-29'
+  - name: jnx-aug-openconfig-system
+    organization: Juniper Networks
+    version: '2021-05-19'
+  - name: openconfig-aaa-radius
+    organization: OpenConfig working group
+    version: 0.5.0
+  - name: openconfig-platform-port
+    organization: OpenConfig working group
+    version: 0.4.0
+  - name: openconfig-aaa-tacacs
+    organization: OpenConfig working group
+    version: 0.5.0
+  - name: openconfig-aaa-types
+    organization: OpenConfig working group
+    version: 0.4.1
+  - name: openconfig-bfd
+    organization: OpenConfig working group
+    version: 0.2.2
+  - name: openconfig-alarm-types
+    organization: OpenConfig working group
+    version: 0.2.1
+  - name: openconfig-alarms
+    organization: OpenConfig working group
+    version: 0.3.2
+  - name: junos-state-agf
+    organization: Juniper Networks, Inc.
+    version: '2022-06-07'
+  - name: openconfig-procmon
+    organization: OpenConfig working group
+    version: 0.3.1
+  - name: openconfig-system-logging
+    organization: OpenConfig working group
+    version: 0.3.1
+  - name: openconfig-license
+    organization: OpenConfig working group
+    version: 0.2.0
+  - name: openconfig-messages
+    organization: OpenConfig working group
+    version: 0.0.1
+  - name: openconfig-system-grpc
+    organization: OpenConfig working group
+    version: 0.1.1
+  - name: openconfig-system-terminal
+    organization: OpenConfig working group
+    version: 0.3.1
+  - name: openconfig-system
+    organization: OpenConfig working group
+    version: 0.17.0
+  - name: jnx-aug-openconfig-aft
+    organization: Juniper Networks
+    version: '2020-05-07'
+  - name: jnx-aug-openconfig-evpn
+    organization: Juniper Networks
+    version: '2023-03-11'
+  - name: jnx-aug-openconfig-ni-mpls
+    organization: Juniper Networks
+    version: '2021-07-09'
+  - name: jnx-aug-openconfig-ni-vlan
+    organization: Juniper Networks
+    version: '2019-12-04'
+  - name: jnx-aug-openconfig-platform
+    organization: Juniper Networks
+    version: '2021-08-30'
+  - name: jnx-aug-openconfig-ldp
+    organization: Juniper Networks
+    version: '2020-11-20'
+  - name: jnx-aug-openconfig-acl
+    organization: Juniper Networks
+    version: '2021-10-12'
+  - name: jnx-aug-openconfig-gribi-statistics
+    organization: Juniper Networks
+    version: '2021-10-12'
+  - name: jnx-openconfig-dev
+    organization: Juniper Networks
+    version: '2018-10-30'
+  - name: junos-saegw-upad
+    organization: Juniper Networks Inc.
+    version: '2021-08-23'
+  - name: junos-state-agf-nas
+    organization: Juniper Networks, Inc.
+    version: '2022-06-07'
+  - name: junos-state-agf-ngap
+    organization: Juniper Networks, Inc.
+    version: '2022-06-07'
+  - name: jnx-aug-openconfig-telemetry
+    organization: Juniper Networks
+    version: '2021-10-07'
+  - name: openconfig-probes-types
+    organization: OpenConfig working group
+    version: 0.1.1
+  - name: openconfig-probes
+    organization: OpenConfig working group
+    version: 0.0.2
+  - name: openconfig-sampling-sflow
+    organization: OpenConfig working group
+    version: '2022-06-21'
+  - name: openconfig-sampling
+    organization: OpenConfig working group
+    version: '2022-06-21'
+  - name: junos-dhcp
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-xmlproxyd-rtg-task-memory
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-xmlproxyd-rsvp-interface
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-state-oam
+    organization: Juniper Networks, Inc.
+    version: '2023-01-13'
+  - name: junos-state-oam-cfm
+    organization: Juniper Networks, Inc.
+    version: '2023-03-30'
+  - name: ietf-netconf-acm
+    organization: IETF NETCONF (Network Configuration) Working Group
+    version: '2012-02-22'
+  - name: openconfig-aft-network-instance
+    organization: OpenConfig working group
+    version: 0.3.0
+  - name: openconfig-aft-state-synced
+    organization: OpenConfig working group
+    version: 2.2.0
+  - name: openconfig-evpn
+    organization: OpenConfig working group
+    version: 0.2.0
+  - name: openconfig-evpn-types
+    organization: OpenConfig working group
+    version: 0.2.0
+  - name: openconfig-keychain
+    organization: OpenConfig working group
+    version: 0.3.0
+  - name: openconfig-keychain-types
+    organization: OpenConfig working group
+    version: 0.2.0
+  - name: openconfig-platform-ext
+    organization: OpenConfig working group
+    version: 0.1.1
+  - name: openconfig-qos-mem-mgmt
+    organization: OpenConfig working group
+    version: 0.9.1
+  - name: openconfig-rib-bgp-attributes
+    organization: OpenConfig working group
+    version: 0.8.0
+  - name: openconfig-rib-bgp-ext
+    organization: OpenConfig working group
+    version: 0.6.0
+  - name: openconfig-rib-bgp-shared-attributes
+    organization: OpenConfig working group
+    version: 0.8.0
+  - name: jnx-tel-top
+    organization: Juniper Networks
+    version: '2017-05-17'
+  - name: openconfig-rib-bgp-table-attributes
+    organization: OpenConfig working group
+    version: 0.8.0
+  - name: openconfig-rib-bgp-tables
+    organization: OpenConfig working group
+    version: 0.8.0
+  - name: openconfig-terminal-device
+    organization: OpenConfig working group
+    version: 1.9.0
+  - name: jnx-aug-openconfig-if-tunnel
+    organization: Juniper Networks
+    version: '2021-12-10'
+  - name: jnx-aug-openconfig-l2-fdb
+    organization: Juniper Networks
+    version: '2020-01-28'
+  - name: jnx-tel-PFE-dynamic-tunnel-stats
+    organization: Juniper Networks
+    version: '2017-07-21'
+  - name: jnx-tel-RE-local-interfaces-stats
+    organization: Juniper Networks
+    version: '2017-04-12'
+  - name: jnx-tel-RE-rsvp-interface
+    organization: Juniper Networks
+    version: '2017-04-09'
+  - name: interface-cos-voqmon-stats
+    organization: Juniper Networks
+    version: '2023-08-08'
+  - name: junos-bbe-smg-cpd-pppoe-stats
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-bbe-smg-cpd-sdb
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-bbe-smgd-ancp-stats
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-bbe-smgd-pppoe-stats
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-bbe-smgd-rsmon-stats
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-bbe-smgd-sub-mgmt-network-stats
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-bbe-statsd-telemetry
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-bgp-types
+    organization: Juniper Networks, Inc.
+    version: '2023-08-08'
+  - name: junos-cmerror-configuration
+    organization: Juniper Networks
+    version: '2021-01-21'
+  - name: junos-cmerror-counters
+    organization: Juniper Networks
+    version: '2021-01-21'
+  - name: junos-control-protocol-types
+    organization: Juniper Networks, Inc.
+    version: '2023-08-08'
+  - name: junos-diameter
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-eventd
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-export-mon
+    organization: Juniper Networks
+    version: '2021-12-20'
+  - name: junos-ietf-interfaces-deviations
+    organization: Juniper Networks, Inc.
+    version: '2023-07-09'
+  - name: junos-ietf-netconf-acm-deviations
+    organization: Juniper Networks, Inc.
+    version: '2023-07-09'
+  - name: junos-jkhmd
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-jl2tpd
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-jpppd
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-kernel-ifstate-stats
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-packet-capture
+    organization: Juniper Networks
+    version: '2021-01-21'
+  - name: junos-page-drop-stats
+    organization: Juniper Networks
+    version: '2023-08-08'
+  - name: junos-pfe-iflset-qstats
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-pfe-interfaces-ext-qstats
+    organization: Juniper Networks Inc.
+    version: '2023-08-01'
+  - name: junos-pfe-interfaces-qstats
+    organization: Juniper Networks Inc.
+    version: '2023-08-01'
+  - name: junos-pfe-logical-qstats
+    organization: Juniper Networks Inc.
+    version: '2023-08-01'
+  - name: junos-pfe-slice-egr-qstats-render
+    organization: Juniper Networks Inc.
+    version: '2023-08-01'
+  - name: junos-qmon
+    organization: Juniper Networks
+    version: '2023-08-08'
+  - name: junos-rmopd
+    organization: Juniper Networks, Inc.
+    version: '2023-11-22'
+  - name: junos-route-validation-types
+    organization: Juniper Networks, Inc.
+    version: '2023-08-08'
+  - name: junos-smid
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-smid-vc
+    organization: Juniper Networks Inc.
+    version: '2017-01-01'
+  - name: junos-spu-cpu
+    organization: Juniper Networks
+    version: '2020-06-20'
+  - name: junos-spu-flow
+    organization: Juniper Networks
+    version: '2020-09-20'
+  - name: junos-state-anomalies
+    organization: Juniper Networks, Inc.
+    version: '2022-02-20'
+  - name: junos-state-anomalies-fib
+    organization: Juniper Networks, Inc.
+    version: '2022-07-20'
+  - name: junos-state-bgp
+    organization: Juniper Networks, Inc.
+    version: '2023-10-09'
+  - name: junos-state-ddos-protection
+    organization: Juniper Networks, Inc.
+    version: '2022-02-24'
+  - name: junos-state-ddos-protection-types
+    organization: Juniper Networks, Inc.
+    version: '2022-02-24'
+  - name: junos-state-gnmi
+    organization: Juniper Networks, Inc.
+    version: '2023-07-20'
+  - name: junos-state-grpc
+    organization: Juniper Networks, Inc.
+    version: '2023-07-20'
+  - name: junos-state-health
+    organization: Juniper Networks, Inc.
+    version: '2022-04-23'
+  - name: junos-state-route-validation
+    organization: Juniper Networks, Inc.
+    version: '2023-08-22'
+  - name: junos-state-route-validation-types
+    organization: Juniper Networks, Inc.
+    version: '2023-08-08'
+  - name: junos-state-routing-options
+    organization: Juniper Networks, Inc.
+    version: '2023-08-08'
+  - name: junos-state-sflow
+    organization: Juniper Networks, Inc.
+    version: '2022-02-25'
+  - name: junos-state-sflow-types
+    organization: Juniper Networks, Inc.
+    version: '2022-02-25'
+  - name: junos-state-system-http
+    organization: Juniper Networks, Inc.
+    version: '2023-07-20'
+  - name: junos-state-system-services
+    organization: Juniper Networks, Inc.
+    version: '2023-07-20'
+  - name: junos-state-system-syslog
+    organization: Juniper Networks Inc.
+    version: '2023-05-01'
+  - name: junos-state-system-syslog-types
+    organization: Juniper Networks, Inc.
+    version: '2022-05-01'
+  - name: junos-telemetry-firewall
+    organization: Juniper Networks
+    version: '2019-05-28'
+  - name: junos-twamp
+    organization: Juniper Networks, Inc.
+    version: '2023-11-22'
+  - name: pfed_base
+    organization: Juniper Networks, Inc.
+    version: '2024-01-23'
