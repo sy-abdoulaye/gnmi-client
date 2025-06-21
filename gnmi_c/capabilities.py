@@ -1,7 +1,5 @@
 from pygnmi.client import gNMIclient as GnmiClient
-from helper import GetLogger, parse_args, load_data
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from json import dumps as json_dumps
+from utils.helper import GetLogger
 from os import makedirs as os_mdirs
 from os.path import join as os_path_join
 from yaml import dump as yaml_dump
@@ -11,32 +9,32 @@ LOGGER = GetLogger.setup_logging()
 class Capabilities():
     """
     Basic gNMI client that is able to query the capabilities of a network device. 
-
-    How to run:
-        python gnmi_c/capabilities.py --testbed testbed.yaml --devices lille-core-ncs5k8-1 
     """
-    def collect_gnmi_data(self, device_name):
+    def collect_gnmi_data(self, testbed, device_name):
         """
-        Connects to a specified device using gNMI and retrieves its capabilities.
+        Connects to a network device using gNMI and retrieves its capabilities.
 
-        This method extracts connection details and credentials from the loaded testbed
-        configuration, connects to the gNMI service on the device, and retrieves its
-        capabilities. Results are returned in dictionary format and also logged.
+        This method extracts connection parameters and credentials from the provided
+        testbed data structure, then initiates a gNMI client session to the specified
+        device. It fetches and logs the gNMI capabilities, and writes the output to
+        a YAML file in a device-specific directory.
 
         Args:
-            device_info (str): The name or identifier of the device to connect to.
+            testbed (dict): A dictionary representing the testbed configuration,
+                            containing device connection details and credentials.
+            device_name (str): The name of the device to connect to within the testbed.
 
         Returns:
-            dict: A dictionary containing the device host as the key and either
-                the retrieved capabilities or an error message as the value.
+            dict: A dictionary containing the device host as the key and either the
+                retrieved capabilities or an error message as the value.
         """
         # extracts connection details and credentials from the loaded testbed
-        gnmi_data = self.testbed.get('devices').get(device_name).get('connections').get('gnmi')
+        gnmi_data = testbed.get('devices').get(device_name).get('connections').get('gnmi')
         host = gnmi_data.get('host')
         port = gnmi_data.get('port', 57400)
 
         login_creds = gnmi_data.get('login_creds')
-        login_data = self.testbed.get('testbed').get('credentials').get(login_creds)
+        login_data = testbed.get('testbed').get('credentials').get(login_creds)
         username = login_data.get('username')
         password = login_data.get('password')
 
@@ -57,30 +55,3 @@ class Capabilities():
         except Exception as e:
             LOGGER.error(f"Error connecting to {host}: {e}")
             return {host: str(e)}
-    
-    def parsr_args_run_task(self):
-        """
-        This method parses command-line arguments, loads the testbed configuration,
-        and concurrently collects gNMI data from specified devices.
-        """
-        kwargs = parse_args(return_kwargs=True)
-        devices = kwargs.get('devices')
-        testbed_file = kwargs.get('testbed')
-
-        self.testbed = load_data(
-            file_extension='yaml',
-            file_path=f"gnmi_c/{testbed_file}"
-        )
-
-        if devices:
-            devices = devices.split(' ')
-
-        results = []
-        with ThreadPoolExecutor(max_workers=len(devices)) as executor:
-            futures = [executor.submit(self.collect_gnmi_data, device) for device in devices]
-            for future in as_completed(futures):
-                results.append(future.result())
-        LOGGER.info(f"gNMI Results:\n{json_dumps(results, indent=2)}")
-
-if __name__ == '__main__':
-    Capabilities().parsr_args_run_task()
