@@ -1,67 +1,78 @@
-"""
+"""Point d'entrée du client gNMI.
 
-How to run gnmi client:
-    python main.py --testbed testbed.yaml --devices lille-core-ncs5k8-1 --action <capabilities|subscribe>
-
-    Example:
+Exemples :
+    python main.py --testbed testbed.yaml --action capabilities
     python main.py --testbed testbed.yaml --devices lille-core-ncs5k8-1 lille-core-mx10k8-1 --action capabilities
-    python main.py --testbed testbed.yaml --devices lille-core-ncs5k8-1 --action subscribe
-    python main.py --testbed testbed.yaml --devices lille-core-mx10k8-1 --action subscribe
+    python main.py --testbed testbed.yaml --devices lille-core-ncs5k8-1 --action subscribe --count 10
+    python main.py --testbed testbed.yaml --action subscribe --duration 60
 """
+from __future__ import annotations
+
+import json
+import sys
+import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from utils.helper import load_data, parse_args
-from utils.helper import GetLogger
+
+from gnmi_c.base import GnmiTask
 from gnmi_c.capabilities import Capabilities
 from gnmi_c.subscribe import Subscribe
-from json import dumps as json_dumps
+from utils.helper import get_logger, load_yaml, parse_args, resolve_testbed_path, setup_logging
 
-LOGGER = GetLogger.setup_logging()
+LOGGER = get_logger("gnmi")
 
-def run_gnmi_task(task_class, testbed, device_names=None):
+
+def run_gnmi_task(task: GnmiTask, testbed: dict, device_names: list[str], max_workers: int = 16,
+                  stop_event: threading.Event | None = None) -> list[dict]:
+    """Exécute ``task`` en parallèle sur ``device_names`` et retourne un résultat par équipement.
+
+    Un Ctrl-C positionne ``stop_event`` : les souscriptions en cours se terminent
+    proprement (fichiers fermés) au lieu d'être interrompues brutalement.
     """
-    Orchestrates the gNMI task (capabilities or subscribe) concurrently.
-
-    Args:
-        task_class (Capabilities or Subscribe): The task class instance to run.
-        testbed_file (str): Path to the testbed YAML file.
-        device_names (list[str], optional): List of device names to target. If None, all devices are used.
-    """
-    task = task_class()
-    
     results = []
-    with ThreadPoolExecutor(max_workers=len(device_names)) as executor:
-        futures = [executor.submit(task.collect_gnmi_data, testbed, device_name) for device_name in device_names]
-        for future in as_completed(futures):
-            results.append(future.result())
+    with ThreadPoolExecutor(max_workers=min(max_workers, len(device_names))) as executor:
+        futures = [executor.submit(task.collect_gnmi_data, testbed, name) for name in device_names]
+        try:
+            for future in as_completed(futures):
+                results.append(future.result())
+        except KeyboardInterrupt:
+            LOGGER.warning("Interruption demandée, arrêt des tâches en cours...")
+            if stop_event is not None:
+                stop_event.set()
+            for future in futures:
+                future.cancel()
+            results = [f.result() for f in futures if not f.cancelled()]
+    return results
 
-    LOGGER.info(f"gNMI Results:\n{json_dumps(results, indent=2)}")
-    
-def main():
-    kwargs = parse_args(return_kwargs=True)
-    devices = kwargs.get('devices')
-    testbed_file = kwargs.get('testbed')
-    action = kwargs.get('action')
+
+def main(argv: list[str] | None = None) -> int:
+    args = parse_args(argv)
+    setup_logging(args.debug)
 
     try:
-        testbed = load_data(
-            file_extension='yaml',
-            file_path=f"gnmi_c/{testbed_file}"
-        )
-    except Exception as e:
-        LOGGER.error("Error when loading the testbed file")
-        return
+        testbed = load_yaml(resolve_testbed_path(args.testbed)) or {}
+    except Exception as error:
+        LOGGER.error("Impossible de charger le testbed : %s", error)
+        return 2
 
-    device_list = devices.split() if devices else list(testbed.get('devices').keys())
-    
-    if action == 'capabilities':
-        LOGGER.info("Running gNMI Capabilities colection...")
-        run_gnmi_task(Capabilities, testbed, device_list)
-    elif action == 'subscribe':
-        LOGGER.info("Running gNMI Subscription stream...")
-        run_gnmi_task(Subscribe, testbed, device_list)
+    device_names = args.devices or list((testbed.get("devices") or {}).keys())
+    if not device_names:
+        LOGGER.error("Aucun équipement à traiter")
+        return 2
+
+    stop_event = threading.Event()
+    if args.action == "capabilities":
+        task = Capabilities(args.output_dir)
     else:
-        LOGGER.error("Invalid action provided...")
-        return
-    
-if __name__=='__main__':
-    main()
+        task = Subscribe(args.output_dir, count=args.count, duration=args.duration,
+                         stop_event=stop_event)
+
+    LOGGER.info("Action %s sur %d équipement(s) : %s", args.action, len(device_names),
+                ", ".join(device_names))
+    results = run_gnmi_task(task, testbed, device_names, args.max_workers, stop_event)
+    LOGGER.info("Résultats gNMI :\n%s", json.dumps(results, indent=2, ensure_ascii=False))
+
+    return 0 if all(r["status"] == "ok" for r in results) else 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())
